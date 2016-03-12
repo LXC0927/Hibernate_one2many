@@ -53,4 +53,9 @@ public class Class implements java.io.Serializable {
 		this.cname = cname;
 	}
 
+	@Override
+	public String toString() {
+		return "Class [cid=" + cid + ", cname=" + cname + "]";
+	}
+
 }

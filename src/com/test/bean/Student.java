@@ -8,6 +8,12 @@ public class Student implements java.io.Serializable {
 
 	// Fields
 
+	@Override
+	public String toString() {
+		return "Student [sid=" + sid + ", sname=" + sname + ", cid=" + cid
+				+ "]";
+	}
+
 	private Integer sid;
 	private String sname;
 	private Integer cid;
