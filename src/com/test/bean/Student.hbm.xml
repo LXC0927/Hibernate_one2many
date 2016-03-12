@@ -6,11 +6,15 @@
 -->
 <hibernate-mapping>
     <class name="com.test.bean.Student" table="student" schema="dbo" catalog="lxc">
-    	<id name="sid" column="sid" type="java.lang.Integer">
-    		<generator class="native"></generator>
-    	</id>
-    	<property name="sname" column="sname" type="java.lang.String">
-    		<column name="sname" length="10" not-null="true"></column>
-    	</property>
+        <id name="sid" type="java.lang.Integer">
+            <column name="sid" />
+            <generator class="native"></generator>
+        </id>
+        <property name="sname" type="java.lang.String">
+            <column name="sname" length="10" not-null="true" />
+        </property>
+        <property name="cid" type="java.lang.Integer">
+            <column name="cid" />
+        </property>
     </class>
 </hibernate-mapping>

@@ -21,6 +21,7 @@
 	<property name="show_sql">true</property>
 	<property name="myeclipse.connection.profile">SQLServer</property>
 	<property name="format_sql">true</property>
+	<property name="hbm2ddl.auto">update</property>
 	<mapping resource="com/test/bean/Class.hbm.xml" />
 	<mapping resource="com/test/bean/Student.hbm.xml" />
 

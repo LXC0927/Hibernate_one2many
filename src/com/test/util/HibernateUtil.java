@@ -22,6 +22,8 @@ public class HibernateUtil {
 	}
 	
 	public static Session getSession(){
+		if(sessionFactory !=null)
+			session = sessionFactory.openSession();
 		return session;
 	}
 	

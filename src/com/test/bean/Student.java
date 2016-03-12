@@ -1,29 +1,58 @@
 package com.test.bean;
 
-import java.io.Serializable;
+/**
+ * Student entity. @author MyEclipse Persistence Tools
+ */
 
-public class Student implements Serializable {
-	private int sid;
+public class Student implements java.io.Serializable {
+
+	// Fields
+
+	private Integer sid;
 	private String sname;
-	public int getSid() {
-		return sid;
+	private Integer cid;
+
+	// Constructors
+
+	/** default constructor */
+	public Student() {
 	}
-	public void setSid(int sid) {
+
+	/** minimal constructor */
+	public Student(String sname) {
+		this.sname = sname;
+	}
+
+	/** full constructor */
+	public Student(String sname, Integer cid) {
+		this.sname = sname;
+		this.cid = cid;
+	}
+
+	// Property accessors
+
+	public Integer getSid() {
+		return this.sid;
+	}
+
+	public void setSid(Integer sid) {
 		this.sid = sid;
 	}
+
 	public String getSname() {
-		return sname;
+		return this.sname;
 	}
+
 	public void setSname(String sname) {
 		this.sname = sname;
 	}
-	@Override
-	public String toString() {
-		return "Student [sid=" + sid + ", sname=" + sname + "]";
+
+	public Integer getCid() {
+		return this.cid;
 	}
-	public Student(String sname) {
-		//super();
-		this.sname = sname;
+
+	public void setCid(Integer cid) {
+		this.cid = cid;
 	}
 
 }
